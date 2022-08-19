@@ -8,13 +8,15 @@ int Prompt(string message)
     int result = int.Parse(value);
     return result;
 }
-void TabulaCubes(int num)
+
+void TableCubes(int N)
 {
-    for (int i = 0; i <= num; i++)
+    for (int k = 0; k <= N; k++)
     {
-    Console.WriteLine(i * i * i + " ");
+    Console.WriteLine(k * k * k + " ");
     }
 }
-int numb = Prompt("Введите число: ");
-Console.WriteLine($"Таблица кубов от 1 до {numb}:");
-TabulaCubes(numb);
+
+int N = Prompt("Введите число N: ");
+Console.WriteLine($"Таблица кубов от 1 до {N}:");
+TableCubes(N);
